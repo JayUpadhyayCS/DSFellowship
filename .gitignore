@@ -3,3 +3,8 @@
 *.csv
 *.xlsx
 *.pdf
+*.docx
+pics
+voxel-flow-master
+InSAR_data_south
+.ipynb_checkpoints
