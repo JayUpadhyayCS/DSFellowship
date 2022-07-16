@@ -13,3 +13,6 @@ InSAR_data_south
 voxel-flow-masterj
 venv
 voxel_flow_master
+.virtenv
+venvLaptop
+.vscode
