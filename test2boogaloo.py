@@ -48,7 +48,14 @@ for y in range(df.columns.size):# includes all dates and adds nans
     if df.columns[y] != df2.columns[y]: #if column is misssing insert it
         df2.insert(loc=y,column=df.columns[y],value=np.nan*11286,allow_duplicates=False)
 print('Here')  
+for x in range(len(df.iloc[: , -1].values)-1,-1,-1):
+    if df.iloc[: , -1].values[x] <-11 or df.iloc[: , -1].values[x] >0:
+        df.drop(index=df.index[x], inplace=True)
 
+
+for row in range(len(df.index)-1,-1,-1):
+    if df.index[row] not in df2.index:
+            df.drop(index=df.index[row], inplace=True)
             
 timestep=10
 print('Here2')  
